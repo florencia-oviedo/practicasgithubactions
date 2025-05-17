@@ -4,7 +4,14 @@ on: [push]
 jobs:
   hola:
     runs-on: ubuntu-latest
+
     steps:
       - name: Saludo
-        run: echo "Hola Mundo desde GitHub Actions"
+        run: echo "Hola Mundo"
      
+  other:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Saludo
+        run: echo "Hola Mundo"
