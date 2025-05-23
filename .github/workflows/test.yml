@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: hola
     steps:
-     - name: Checkout
-       uses: actions/checkout@v4.2.2
      - name: LS
-       run: ls -al
-     
+       run: |
+          echo "Hola Mundo"
+          ls -la
+          cat hola.txt
